@@ -1,10 +1,7 @@
-import * as React from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import Slider from "@mui/material/Slider";
+import React from "react";
 import PopoverMenu from "./PopoverMenu";
 import ProTip from "./ProTip";
+import { Button, Container, Link, Slider, Typography } from "@mui/material";
 
 function Copyright() {
   return (
@@ -32,6 +29,9 @@ export default function App() {
           classes={{ active: "shadow-none" }}
           slotProps={{ thumb: { className: "hover:shadow-none" } }}
         />
+        <Button variant="contained" color="indigo" className="p-6 mx-10">
+          Hola Agus
+        </Button>
         <PopoverMenu />
         <ProTip />
         <Copyright />
