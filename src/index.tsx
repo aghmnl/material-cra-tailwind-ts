@@ -1,11 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createTheme,
-  StyledEngineProvider,
-  ThemeProvider,
-} from "@mui/material/styles";
-import { CssBaseline } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
 import { theme, rootElement } from "./theme";
 import "./index.css";
 import App from "./App";
@@ -18,12 +13,9 @@ const root = ReactDOM.createRoot(rootElement!);
 
 root.render(
   <React.StrictMode>
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-      </ThemeProvider>
-    </StyledEngineProvider>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

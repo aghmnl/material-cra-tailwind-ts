@@ -22,18 +22,6 @@ declare module "@mui/material/Button" {
 }
 
 export const theme = createTheme({
-  components: {
-    MuiPopover: {
-      defaultProps: {
-        container: rootElement,
-      },
-    },
-    MuiPopper: {
-      defaultProps: {
-        container: rootElement,
-      },
-    },
-  },
   palette: {
     emerald: {
       main: "#047857", // Tailwind Emerald 700
